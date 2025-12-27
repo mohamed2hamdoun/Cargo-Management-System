@@ -4,7 +4,8 @@ import os
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql+psycopg2://postgres:123456789@localhost:5432/shipping_db",
+    # "postgresql+psycopg2://postgres:123456789@localhost:5432/shipping_db",
+    "postgresql://cargo_management_system_user:qmXAzlwkY26ZFvOkL6EaVMXki3R7Ugww@dpg-d57sp875r7bs738bmej0-a.oregon-postgres.render.com/cargo_management_system",
 )
 
 engine = create_engine(DATABASE_URL, echo=True)

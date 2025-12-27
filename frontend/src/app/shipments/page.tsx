@@ -143,7 +143,7 @@ export default function ShipmentsPage() {
         style={{
           marginTop: "1.5rem",
           padding: "1rem",
-          border: "1px solid #ddd",
+          border: "1px solid #ffffffff",
           borderRadius: 8,
         }}
       >
@@ -159,7 +159,7 @@ export default function ShipmentsPage() {
               name="tracking_number"
               value={form.tracking_number}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem" ,border:"1px solid #ffffffff"}}
               required
             />
           </label>
@@ -170,7 +170,7 @@ export default function ShipmentsPage() {
               name="customer_id"
               value={form.customer_id || ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
               required
             >
               <option value="">Select customer</option>
@@ -189,7 +189,7 @@ export default function ShipmentsPage() {
               type="number"
               value={form.origin_address_id ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -200,7 +200,7 @@ export default function ShipmentsPage() {
               type="number"
               value={form.destination_address_id ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -210,7 +210,7 @@ export default function ShipmentsPage() {
               name="status"
               value={form.status ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -220,7 +220,7 @@ export default function ShipmentsPage() {
               name="service_type"
               value={form.service_type ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -232,7 +232,7 @@ export default function ShipmentsPage() {
               step="0.01"
               value={form.weight_kg ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -244,7 +244,7 @@ export default function ShipmentsPage() {
               step="0.01"
               value={form.base_price ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -256,7 +256,7 @@ export default function ShipmentsPage() {
               step="0.01"
               value={form.total_price ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -266,7 +266,7 @@ export default function ShipmentsPage() {
               name="currency"
               value={form.currency ?? ""}
               onChange={handleChange}
-              style={{ width: "100%", padding: "0.4rem" }}
+              style={{ width: "100%", padding: "0.4rem",border:"1px solid #ffffffff" }}
             />
           </label>
 
@@ -304,19 +304,19 @@ export default function ShipmentsPage() {
           >
             <thead>
               <tr>
-                <th style={{ borderBottom: "1px solid #ccc", textAlign: "left" }}>
+                <th style={{ borderBottom: "1px solid #ffffffff", textAlign: "left" }}>
                   ID
                 </th>
-                <th style={{ borderBottom: "1px solid #ccc", textAlign: "left" }}>
+                <th style={{ borderBottom: "1px solid #ffffffff", textAlign: "left" }}>
                   Tracking #
                 </th>
-                <th style={{ borderBottom: "1px solid #ccc", textAlign: "left" }}>
+                <th style={{ borderBottom: "1px solid #ffffffff", textAlign: "left" }}>
                   Customer ID
                 </th>
-                <th style={{ borderBottom: "1px solid #ccc", textAlign: "left" }}>
+                <th style={{ borderBottom: "1px solid #ffffffff", textAlign: "left" }}>
                   Status
                 </th>
-                <th style={{ borderBottom: "1px solid #ccc", textAlign: "left" }}>
+                <th style={{ borderBottom: "1px solid #ffffffff", textAlign: "left" }}>
                   Base / Total
                 </th>
               </tr>
